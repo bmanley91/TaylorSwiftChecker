@@ -1,0 +1,17 @@
+apply plugin: 'application'
+apply plugin: 'groovy'
+apply plugin: 'idea'
+
+mainClassName = 'main.groovy.TaylorChecker.Main'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile 'org.codehaus.groovy:groovy-all:2.4.0'
+}
+
+task wrapper(type: Wrapper) {
+	gradleVersion = '2.3'
+}
